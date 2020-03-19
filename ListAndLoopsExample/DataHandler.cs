@@ -9,13 +9,14 @@ namespace ListAndLoopsExample
         public List<Coffee> coffees = new List<Coffee>();
         public List<Person> persons = new List<Person>();
         public List<Company> companys = new List<Company>();
-        
-        //Metodi 
+
+        //Metodi kysytään kahvi jutut
         public Coffee CreateCoffee()
         {
             //Merkki 
             Console.WriteLine("Enter Coffee Brand: ");
             var brand = Console.ReadLine();
+            
 
             //Maahantuoja
             Console.WriteLine("Enter Coffee Importer: ");
@@ -39,15 +40,15 @@ namespace ListAndLoopsExample
 
         //public AddCoffeeToList()
         //{
-        //    return toReturn;
+                
         //}
 
 
 
 
+        //AddPersonToList
 
-
-        //metodi luo persoona
+        //Metodi kysytään henkilö jutut
         public Person CreatePerson()
         {
             //Nimi
@@ -70,6 +71,8 @@ namespace ListAndLoopsExample
             Person toReturn = new Person(FirstName, LastName, PhoneNumber, Email);
             return toReturn;
         }
+
+
 
         public Company CreateCompany()
         {
