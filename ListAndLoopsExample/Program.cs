@@ -11,12 +11,18 @@ namespace ListAndLoopsExample
             dh.coffees.Add(Coffee);
             var Person = dh.CreatePerson();
             dh.persons.Add(Person);
+            var Company = dh.CreateCompany();
+            dh.companys.Add(Company);
 
             //var paketti = new Coffee("Pressa", 4.0, Coffee.Roast.light, "Paulig");
 
-            Console.WriteLine($"enum: {Coffee.roast}");
-            Console.WriteLine($"Name:{Person.FirstName} {Person.LastName}");
-            Console.WriteLine($"Their Phone number is: {Person.PhoneNumber} and Email: {Person.Email}");
+            Console.WriteLine($"\nenum: {Coffee.roast}");
+            Console.WriteLine($"\nName: {Person.FirstName} {Person.LastName}");
+            Console.WriteLine($"\nPhone number: {Person.PhoneNumber}\nEmail: {Person.Email}");
+            Console.WriteLine($"\nCompany name: {Company.CompanyName}\nContact person: {Company.ContactPerson}\nCountry: {Company.Country}");
+
+
+
 
 
 

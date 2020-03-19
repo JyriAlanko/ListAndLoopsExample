@@ -7,10 +7,14 @@ namespace ListAndLoopsExample
     class Company
     {
         public string CompanyName;
-        public Person ContactPerson;
+        public string ContactPerson;
         public string Country;
 
-        public Company(string CompanyName, Person ContactPerson, string Country)
+        public Company()
+        {
+
+        }
+        public Company(string CompanyName, string ContactPerson, string Country)
         {
             this.CompanyName = CompanyName;
             this.ContactPerson = ContactPerson;

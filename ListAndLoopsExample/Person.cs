@@ -16,11 +16,6 @@ namespace ListAndLoopsExample
 
         }
 
-        public Person(string FirstName)
-        {
-            this.FirstName = FirstName;
-        }
-
         public Person(string FirstName, string LastName, string PhoneNumber, string Email)
         {
             this.FirstName = FirstName;
