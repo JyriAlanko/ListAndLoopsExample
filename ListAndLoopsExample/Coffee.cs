@@ -27,22 +27,22 @@ namespace ListAndLoopsExample
         public Coffee(string brand, double price)
         {
             this.brand = brand;
-            this.price = price
-        }
-
-        public Coffee(string brand, double price, string importer)
-        {
-            this.brand = brand;
             this.price = price;
-            this.importer = importer;
         }
 
-        public Coffee(string brand, double price, Roast roast, string importer)
+        public Coffee(string brand, string importer, double price)
         {
             this.brand = brand;
+            this.importer = importer;
+            this.price = price;
+        }
+
+        public Coffee(string brand, string importer, double price, Roast roast)
+        {
+            this.brand = brand;
+            this.importer = importer;
             this.price = price;
             this.roast = roast;
-            this.importer = importer;
         }
     }
 }
